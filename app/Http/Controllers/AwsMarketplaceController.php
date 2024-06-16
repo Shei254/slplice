@@ -44,6 +44,7 @@ class AwsMarketplaceController extends Controller
                 throw new \Exception("Could not find your associated aws account. Please set up your account through aws or through the app");
             }
 
+            dd("customer id", $request->customer_id);
             $awsSubscription = AwsSubscription::where("aws_customer_id", $request->customer_id)->latest()->first();
             if (!$awsSubscription) {
                 throw new \Exception("Could not find an active subscription for your account");
