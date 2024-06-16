@@ -79,7 +79,7 @@
                                     </a>
                                     <div class="dropdown-menu dash-h-dropdown dropdown-menu-end">
                                         @foreach (App\Models\Utility::languages() as $code => $language)
-                                            <a href="{{ route('register',[$ref,$code]) }}" tabindex="0"
+                                            <a href="{{ route('register',[null,$code]) }}" tabindex="0"
                                                class="dropdown-item dropdown-item {{ $LangName->code == $code ? 'active' : '' }}">
                                                 <span>{{ ucFirst($language) }}</span>
                                             </a>
