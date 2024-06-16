@@ -133,6 +133,7 @@ class AwsMarketplaceController extends Controller
 
             return view('auth.verify-email', compact('lang'));
         } catch (\Exception $e) {
+            dd($e);
             return redirect("/register")->with("error", $e->getMessage());
         }
     }
