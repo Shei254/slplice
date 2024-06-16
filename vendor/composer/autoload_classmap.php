@@ -66,6 +66,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => $baseDir . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
     'App\\Http\\Controllers\\Auth\\RegisteredUserController' => $baseDir . '/app/Http/Controllers/Auth/RegisteredUserController.php',
     'App\\Http\\Controllers\\Auth\\VerifyEmailController' => $baseDir . '/app/Http/Controllers/Auth/VerifyEmailController.php',
+    'App\\Http\\Controllers\\AwsMarketplaceController' => $baseDir . '/app/Http/Controllers/AwsMarketplaceController.php',
     'App\\Http\\Controllers\\BanktransferController' => $baseDir . '/app/Http/Controllers/BanktransferController.php',
     'App\\Http\\Controllers\\BenefitPaymentController' => $baseDir . '/app/Http/Controllers/BenefitPaymentController.php',
     'App\\Http\\Controllers\\CashfreeController' => $baseDir . '/app/Http/Controllers/CashfreeController.php',

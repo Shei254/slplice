@@ -881,6 +881,7 @@ class ComposerStaticInit58b229c318c8b64029bb56341de9aeb1
         'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
         'App\\Http\\Controllers\\Auth\\RegisteredUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisteredUserController.php',
         'App\\Http\\Controllers\\Auth\\VerifyEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerifyEmailController.php',
+        'App\\Http\\Controllers\\AwsMarketplaceController' => __DIR__ . '/../..' . '/app/Http/Controllers/AwsMarketplaceController.php',
         'App\\Http\\Controllers\\BanktransferController' => __DIR__ . '/../..' . '/app/Http/Controllers/BanktransferController.php',
         'App\\Http\\Controllers\\BenefitPaymentController' => __DIR__ . '/../..' . '/app/Http/Controllers/BenefitPaymentController.php',
         'App\\Http\\Controllers\\CashfreeController' => __DIR__ . '/../..' . '/app/Http/Controllers/CashfreeController.php',
