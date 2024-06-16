@@ -8359,24 +8359,24 @@
         },
         {
             "name": "shei/aws-marketplace-tools",
-            "version": "1.0.8",
-            "version_normalized": "1.0.8.0",
+            "version": "1.0.9",
+            "version_normalized": "1.0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shei25420/aws-marketplace-tools.git",
-                "reference": "b1881624e9b38c1c4a5f53f722f74d2f81cae9a9"
+                "reference": "1effd70dd20c9e3efaa9118710dea96ffdcfceb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shei25420/aws-marketplace-tools/zipball/b1881624e9b38c1c4a5f53f722f74d2f81cae9a9",
-                "reference": "b1881624e9b38c1c4a5f53f722f74d2f81cae9a9",
+                "url": "https://api.github.com/repos/shei25420/aws-marketplace-tools/zipball/1effd70dd20c9e3efaa9118710dea96ffdcfceb9",
+                "reference": "1effd70dd20c9e3efaa9118710dea96ffdcfceb9",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "^3.314",
                 "laravel/framework": "^10.10"
             },
-            "time": "2024-06-16T19:37:13+00:00",
+            "time": "2024-06-16T19:49:08+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -8401,7 +8401,7 @@
             ],
             "description": "aws marketplace integration tools",
             "support": {
-                "source": "https://github.com/shei25420/aws-marketplace-tools/tree/1.0.8",
+                "source": "https://github.com/shei25420/aws-marketplace-tools/tree/1.0.9",
                 "issues": "https://github.com/shei25420/aws-marketplace-tools/issues"
             },
             "install-path": "../shei/aws-marketplace-tools"
