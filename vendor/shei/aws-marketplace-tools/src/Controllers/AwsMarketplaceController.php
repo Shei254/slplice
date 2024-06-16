@@ -34,6 +34,7 @@ class AwsMarketplaceController extends Controller
 
             //Check if Aws Customer Already Exists
             $aws_customer = AwsCustomer::where("customer_id", $customer_results["CustomerIdentifier"])->first();
+            dd("aws customer", $aws_customer);
             if (!$aws_customer) {
                 throw new Exception("You already have an account with us");
             }
