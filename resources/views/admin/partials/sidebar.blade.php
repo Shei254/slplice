@@ -87,40 +87,48 @@
                @endif
 
 
-
-
-               @if (\Auth::user()->type == 'Super Admin' || \Auth::user()->type == 'Admin')
+               @if(\Auth::user()->awsCustomer)
                    <li
                        class="dash-item {{ Request::segment(1) == 'plan' || Request::route()->getName() == 'plan.payment' ? 'active' : '' }}">
-                       <a class="dash-link" href="{{ route('plan.index') }}">
+                       <a class="dash-link" href="#">
                            <span class="dash-micon"><i class="ti ti-trophy"></i></span><span
-                               class="dash-mtext">{{ __('Plan') }}</span>
+                               class="dash-mtext">{{ __('Billing Handled By AWS') }}</span>
                        </a>
                    </li>
-               @endif
+               @else
+                   @if (\Auth::user()->type == 'Super Admin' || \Auth::user()->type == 'Admin')
+                       <li
+                           class="dash-item {{ Request::segment(1) == 'plan' || Request::route()->getName() == 'plan.payment' ? 'active' : '' }}">
+                           <a class="dash-link" href="{{ route('plan.index') }}">
+                               <span class="dash-micon"><i class="ti ti-trophy"></i></span><span
+                                   class="dash-mtext">{{ __('Plan') }}</span>
+                           </a>
+                       </li>
+                   @endif
 
-               @if (\Auth::user()->type == 'Super Admin')
-                   <li
-                       class="dash-item  {{ \Request::route()->getName() == 'plan_request' || \Request::route()->getName() == 'plan_request.show' || \Request::route()->getName() == 'plan_request.edit' ? ' active' : '' }}">
-                       <a href="{{ route('plan_request.index') }}" class="dash-link">
-                           <span class="dash-micon"><i class="ti ti-brand-telegram"></i></span><span
-                               class="dash-mtext">{{ __('Plan Request') }}</span>
-                       </a>
-                   </li>
-                    <li class="dash-item   {{ Request::segment(1) == 'referral-program' ? 'active' : '' }}">
-                        <a href="{{ route('referral-programs.index') }}" class="dash-link">
-                            <span class="dash-micon"><i class="ti ti-trophy"></i></span><span
-                                class="dash-mtext">{{ __('Referral Program') }}</span>
-                        </a>
-                    </li>
+                   @if (\Auth::user()->type == 'Super Admin')
+                       <li
+                           class="dash-item  {{ \Request::route()->getName() == 'plan_request' || \Request::route()->getName() == 'plan_request.show' || \Request::route()->getName() == 'plan_request.edit' ? ' active' : '' }}">
+                           <a href="{{ route('plan_request.index') }}" class="dash-link">
+                               <span class="dash-micon"><i class="ti ti-brand-telegram"></i></span><span
+                                   class="dash-mtext">{{ __('Plan Request') }}</span>
+                           </a>
+                       </li>
+                       <li class="dash-item   {{ Request::segment(1) == 'referral-program' ? 'active' : '' }}">
+                           <a href="{{ route('referral-programs.index') }}" class="dash-link">
+                               <span class="dash-micon"><i class="ti ti-trophy"></i></span><span
+                                   class="dash-mtext">{{ __('Referral Program') }}</span>
+                           </a>
+                       </li>
 
-                   <li
-                   class="dash-item  {{ \Request::route()->getName() == 'custom_domain_request' || \Request::route()->getName() == 'custom_domain_request.show' || \Request::route()->getName() == 'custom_domain_request.edit' ? ' active' : '' }}">
-                   <a href="{{ route('custom_domain_request.index') }}" class="dash-link">
-                       <span class="dash-micon"><i class="ti ti-browser"></i></span><span
-                           class="dash-mtext">{{ __('Domain Request') }}</span>
-                   </a>
-               </li>
+                       <li
+                           class="dash-item  {{ \Request::route()->getName() == 'custom_domain_request' || \Request::route()->getName() == 'custom_domain_request.show' || \Request::route()->getName() == 'custom_domain_request.edit' ? ' active' : '' }}">
+                           <a href="{{ route('custom_domain_request.index') }}" class="dash-link">
+                               <span class="dash-micon"><i class="ti ti-browser"></i></span><span
+                                   class="dash-mtext">{{ __('Domain Request') }}</span>
+                           </a>
+                       </li>
+                   @endif
                @endif
 
                @if(\Auth::user()->type == 'Admin')

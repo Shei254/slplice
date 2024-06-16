@@ -6,6 +6,7 @@ use App\Traits\UserTrait;
 use Carbon\Carbon;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Shei\AwsMarketplaceTools\Models\AwsCustomer;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -67,6 +68,10 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function awsUser () {
+        return $this->hasOne(AwsCustomer::class);
+    }
 
     public function getAllpermissionsAttribute()
     {
