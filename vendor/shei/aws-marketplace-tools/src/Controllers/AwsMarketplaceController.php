@@ -24,7 +24,7 @@ class AwsMarketplaceController extends Controller
             ]);
 
             if ($validate->fails()) {
-                return redirect("/signup")->with('error', "Error validating marketplace token");
+                return redirect("/register")->with('error', "Error validating marketplace token");
             }
 
             $customer_results = $this->meteringService->resolveCustomer($request['x-amzn-marketplace-token']);

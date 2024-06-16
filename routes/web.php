@@ -512,4 +512,6 @@ Route::get('request-amount-cancel/{id}', [ReferralProgramController::class, 'req
 Route::post('request-amount-store/{id}', [ReferralProgramController::class, 'requestedAmountStore'])->name('request.amount.store')->middleware(['auth', 'XSS']);
 Route::get('request-amount/{id}/{status}', [ReferralProgramController::class, 'requestedAmount'])->name('amount.request')->middleware(['auth', 'XSS']);
 
-
+//Aws Routes
+Route::get("/aws/register", [\App\Http\Controllers\AwsMarketplaceController::class, "show"]);
+Route::post("/aws/register", [\App\Http\Controllers\AwsMarketplaceController::class, "register"])->name("aws.register");

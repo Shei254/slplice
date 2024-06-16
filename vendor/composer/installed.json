@@ -6358,17 +6358,17 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.20",
-            "version_normalized": "10.5.20.0",
+            "version": "10.5.21",
+            "version_normalized": "10.5.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "547d314dc24ec1e177720d45c6263fb226cc2ae3"
+                "reference": "ac837816fa52078f7a5e17ed774f256a72a51af6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/547d314dc24ec1e177720d45c6263fb226cc2ae3",
-                "reference": "547d314dc24ec1e177720d45c6263fb226cc2ae3",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ac837816fa52078f7a5e17ed774f256a72a51af6",
+                "reference": "ac837816fa52078f7a5e17ed774f256a72a51af6",
                 "shasum": ""
             },
             "require": {
@@ -6402,7 +6402,7 @@
             "suggest": {
                 "ext-soap": "To be able to generate mocks based on WSDL files"
             },
-            "time": "2024-04-24T06:32:35+00:00",
+            "time": "2024-06-15T09:13:15+00:00",
             "bin": [
                 "phpunit"
             ],
@@ -6442,7 +6442,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.20"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.21"
             },
             "funding": [
                 {
@@ -8359,24 +8359,24 @@
         },
         {
             "name": "shei/aws-marketplace-tools",
-            "version": "1.0.4",
-            "version_normalized": "1.0.4.0",
+            "version": "1.0.6",
+            "version_normalized": "1.0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shei25420/aws-marketplace-tools.git",
-                "reference": "bba1cd74be149d8fa8f89e4cd875ebf6259a2a63"
+                "reference": "baa5447dbc10df34f585b8805f48a6b317880445"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shei25420/aws-marketplace-tools/zipball/bba1cd74be149d8fa8f89e4cd875ebf6259a2a63",
-                "reference": "bba1cd74be149d8fa8f89e4cd875ebf6259a2a63",
+                "url": "https://api.github.com/repos/shei25420/aws-marketplace-tools/zipball/baa5447dbc10df34f585b8805f48a6b317880445",
+                "reference": "baa5447dbc10df34f585b8805f48a6b317880445",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "^3.314",
                 "laravel/framework": "^10.10"
             },
-            "time": "2024-06-15T02:19:40+00:00",
+            "time": "2024-06-16T00:53:07+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -8401,7 +8401,7 @@
             ],
             "description": "aws marketplace integration tools",
             "support": {
-                "source": "https://github.com/shei25420/aws-marketplace-tools/tree/1.0.4",
+                "source": "https://github.com/shei25420/aws-marketplace-tools/tree/1.0.6",
                 "issues": "https://github.com/shei25420/aws-marketplace-tools/issues"
             },
             "install-path": "../shei/aws-marketplace-tools"
