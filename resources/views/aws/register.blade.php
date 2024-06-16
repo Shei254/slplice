@@ -2,7 +2,8 @@
     $logo = Utility::get_superadmin_logo();
     $logos = \App\Models\Utility::get_file('uploads/logo/');
 
-    $LangName = \App\Models\Languages::where('code', $lang)->first();
+//    $LangName = \App\Models\Languages::where('code', $lang)->first();
+    $LangName = null;
     if (empty($LangName)) {
         $LangName = new App\Models\Utility();
         $LangName->fullName = 'English';
