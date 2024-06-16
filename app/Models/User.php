@@ -70,7 +70,7 @@ class User extends Authenticatable implements MustVerifyEmail
     ];
 
     public function awsUser () {
-        return $this->hasOne(AwsCustomer::class);
+        return $this->hasOne(AwsCustomer::class, "user_id", "id");
     }
 
     public function getAllpermissionsAttribute()
