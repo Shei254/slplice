@@ -5859,16 +5859,16 @@
         },
         {
             "name": "shei/aws-marketplace-tools",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shei25420/aws-marketplace-tools.git",
-                "reference": "1effd70dd20c9e3efaa9118710dea96ffdcfceb9"
+                "reference": "a6db030f798a79bcca04134df1866b67b899a9f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shei25420/aws-marketplace-tools/zipball/1effd70dd20c9e3efaa9118710dea96ffdcfceb9",
-                "reference": "1effd70dd20c9e3efaa9118710dea96ffdcfceb9",
+                "url": "https://api.github.com/repos/shei25420/aws-marketplace-tools/zipball/a6db030f798a79bcca04134df1866b67b899a9f0",
+                "reference": "a6db030f798a79bcca04134df1866b67b899a9f0",
                 "shasum": ""
             },
             "require": {
@@ -5898,10 +5898,10 @@
             ],
             "description": "aws marketplace integration tools",
             "support": {
-                "source": "https://github.com/shei25420/aws-marketplace-tools/tree/1.0.9",
+                "source": "https://github.com/shei25420/aws-marketplace-tools/tree/1.0.10",
                 "issues": "https://github.com/shei25420/aws-marketplace-tools/issues"
             },
-            "time": "2024-06-16T19:49:08+00:00"
+            "time": "2024-06-16T22:04:26+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",

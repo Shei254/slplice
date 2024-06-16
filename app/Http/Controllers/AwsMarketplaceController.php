@@ -101,6 +101,7 @@ class AwsMarketplaceController extends Controller
 
             $user->$userDefaultData;
             $user->userDefaultDataRegister($user->id);
+            $awsUser->assignUser($user->id);
 
             if (Utility::getValByName('verification_btn') == 'on') {
                 try {
