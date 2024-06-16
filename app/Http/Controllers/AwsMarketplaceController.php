@@ -50,6 +50,7 @@ class AwsMarketplaceController extends Controller
             }
 
             //Fetch Plan
+            dd("aws subscription register", $awsSubscription);
             $plan = Plan::where("name", $awsSubscription->dimension)->first();
             if (!$plan) {
                 throw new \Exception("Something went wrong. PLease contact support");
