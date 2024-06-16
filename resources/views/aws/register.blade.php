@@ -102,7 +102,7 @@
                                 <h2 class="mb-3 f-w-600">{{ __('Register') }}</h2>
                             </div>
                             {{ Form::open(['route' => 'aws.register', 'method' => 'post', 'id' => 'loginForm']) }}
-                            <input type="hidden" name="ref_code" value="{{$ref}}">
+{{--                            <input type="hidden" name="ref_code" value="{{$ref}}">--}}
                             <input type="hidden" name="customer_id" value="{{ app("request")->input("customer_id")  }}" />
                             @if (session('status'))
                                 <div class="mb-4 font-medium text-lg text-green-600 text-danger">
@@ -167,7 +167,7 @@
                             </div>
 
                             <p class="my-4 text-center d-flex">{{ __('Already have an account? ') }}<a
-                                    href="{{ route('login',$lang) }}"
+                                    href="{{ route('login',null) }}"
                                     tabindex="0">{{ __('Login') }}</a>
                             </p>
 
