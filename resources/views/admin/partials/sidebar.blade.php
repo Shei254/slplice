@@ -85,8 +85,6 @@
                    @endif
                @endcan
                @endif
-
-                sidebar {{ \Auth::user()->awsCustomer  }}
                @if(\Auth::user()->awsCustomer)
                    <li
                        class="dash-item {{ Request::segment(1) == 'plan' || Request::route()->getName() == 'plan.payment' ? 'active' : '' }}">
