@@ -130,16 +130,21 @@
 
 
                         @if ($plan->id != \Auth::user()->plan && \Auth::user()->type != 'Super Admin')
-                            @if ($plan->price > 0 && \Auth::user()->trial_plan == 0 && \Auth::user()->plan != $plan->id && $plan->trial == 1)
-                                <a href="{{ route('plan.trial', \Illuminate\Support\Facades\Crypt::encrypt($plan->id)) }}"
-                                    class="btn btn-lg btn-primary btn-icon m-1">{{ __('Start Free Trial') }}</a>
-                            @endif
-                            @if ($plan->price > 0)
-                                <a href="{{ route('plan.payment', \Illuminate\Support\Facades\Crypt::encrypt($plan->id)) }}"
-                                    id="interested_plan_2" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="{{ __('Subscribe') }}" class="btn btn-lg btn-primary btn-icon m-12">
-                                    <i class="ti ti-shopping-cart m-1 text-white"></i>{{ __('Subscribe') }}
-                                </a>
+                            @if (\Auth::user()->awsCustomer)
+                                <a href="#"
+                                   class="btn btn-lg btn-primary btn-icon m-1">{{ __('Billing Handled By Aws') }}</a>
+                            @else
+                                @if ($plan->price > 0 && \Auth::user()->trial_plan == 0 && \Auth::user()->plan != $plan->id && $plan->trial == 1)
+                                    <a href="{{ route('plan.trial', \Illuminate\Support\Facades\Crypt::encrypt($plan->id)) }}"
+                                       class="btn btn-lg btn-primary btn-icon m-1">{{ __('Start Free Trial') }}</a>
+                                @endif
+                                @if ($plan->price > 0)
+                                    <a href="{{ route('plan.payment', \Illuminate\Support\Facades\Crypt::encrypt($plan->id)) }}"
+                                       id="interested_plan_2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                       title="{{ __('Subscribe') }}" class="btn btn-lg btn-primary btn-icon m-12">
+                                        <i class="ti ti-shopping-cart m-1 text-white"></i>{{ __('Subscribe') }}
+                                    </a>
+                                @endif
                             @endif
                         @endif
 
