@@ -130,7 +130,6 @@
 
 
                         @if ($plan->id != \Auth::user()->plan && \Auth::user()->type != 'Super Admin')
-                            aws Customer {{ \Auth::user()->awsCustomer  }}
                             @if (\Auth::user()->awsCustomer)
                                 <a href="#"
                                    class="btn btn-lg btn-primary btn-icon m-1">{{ __('Billing Handled By Aws') }}</a>
